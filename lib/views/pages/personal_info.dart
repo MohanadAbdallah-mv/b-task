@@ -24,7 +24,7 @@ class _PersonalInfoScreenState extends State<PersonalInfoScreen> {
       ),
       backgroundColor: Colors.white,
       bottomNavigationBar: Padding(
-        padding: const EdgeInsets.only(bottom: 70, left: 65, right: 65),
+        padding: const EdgeInsets.only(bottom: 120, left: 65, right: 65),
         child: CustomButton(
           child: Text(
             "Next",
@@ -57,31 +57,31 @@ class _PersonalInfoScreenState extends State<PersonalInfoScreen> {
             height: 10,
           ),
           Container(
-            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 15),
+            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 10),
             child: const CustomTextField(
               labelText: 'First Name',
             ),
           ),
           Container(
-            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 15),
+            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 10),
             child: const CustomTextField(
               labelText: 'Last Name',
             ),
           ),
           Container(
-            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 15),
+            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 10),
             child: const CustomTextField(
               labelText: 'Mobile Number',
             ),
           ),
           Container(
-            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 15),
+            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 10),
             child: const CustomTextField(
               labelText: 'Landline',
             ),
           ),
           Container(
-            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 15),
+            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 10),
             child: const CustomTextField(
               labelText: 'Email',
             ),
