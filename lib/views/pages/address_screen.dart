@@ -24,7 +24,7 @@ class _AddressScreenState extends State<AddressScreen> {
       ),
       backgroundColor: Colors.white,
       bottomNavigationBar: Padding(
-        padding: const EdgeInsets.only(bottom: 164, left: 65, right: 65),
+        padding: const EdgeInsets.only(bottom: 120, left: 65, right: 65),
         child: CustomButton(
           child: Text(
             "Next",
