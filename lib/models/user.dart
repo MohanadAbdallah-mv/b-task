@@ -1,4 +1,4 @@
-import 'package:blnk_task/models/address.dart';
+import 'package:blnk_task/models/address/address.dart';
 
 class User {
   User({
