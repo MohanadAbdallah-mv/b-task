@@ -1,5 +1,4 @@
 import 'package:blnk_task/providers/user_provider.dart';
-import 'package:blnk_task/util/app_colors.dart';
 import 'package:blnk_task/util/app_theme.dart';
 import 'package:blnk_task/util/navigator_helper.dart';
 import 'package:blnk_task/util/routes.dart';
@@ -77,7 +76,6 @@ class _PersonalInfoScreenState extends State<PersonalInfoScreen> {
             style: AppTheme.activeProgress,
           ),
           onTap: () {
-            //todo send data to provider
             bool? valid = formKey.currentState?.validate();
 
             if (valid != null && valid == true) {
