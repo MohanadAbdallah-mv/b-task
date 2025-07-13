@@ -24,6 +24,14 @@ class User {
     address = newAddress;
   }
 
+  set setFrontID(String front) {
+    frontIDURL = front;
+  }
+
+  set setBackID(String back) {
+    backIDURL = back;
+  }
+
   factory User.fromJson(Map<String, dynamic> json) {
     return User(
       firstName: json["firstName"] as String,

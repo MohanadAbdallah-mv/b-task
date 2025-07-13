@@ -44,4 +44,9 @@ class AppTheme {
     fontWeight: FontWeight.w600,
     color: Colors.white,
   );
+  static TextStyle viewTextFieldTitle = GoogleFonts.inter(
+    fontSize: 14,
+    fontWeight: FontWeight.w500,
+    color: AppColors.normalTextColor,
+  );
 }

@@ -18,7 +18,7 @@ class Address {
   late String landMark;
 
   String get fullAddressString {
-    return '$building $streetName Street $landMark. $areaName, $cityName \n Floor $floor Apartment $apartment';
+    return '$building $streetName Street $landMark. $areaName, $cityName  Floor $floor Apartment $apartment';
   }
 
   factory Address.fromJson(Map<String, dynamic> json) {

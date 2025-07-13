@@ -10,6 +10,12 @@ class UserProvider extends ChangeNotifier {
   String? frontIDPath;
   String? backIDPath;
   PDFDocument? frontIDDoc;
+  void clean() {
+    currentUser = null;
+    frontIDPath = null;
+    backIDPath = null;
+    frontIDDoc = null;
+  }
 
   void setUser(String firstName, String lastName, String mobileNumber,
       String landLine, String email) {
@@ -39,11 +45,13 @@ class UserProvider extends ChangeNotifier {
 
   void setFrontIDPath(String path) {
     frontIDPath = path;
+    currentUser!.setFrontID = path;
     notifyListeners();
   }
 
   void setBackIDPath(String path) {
     backIDPath = path;
+    currentUser!.setBackID = path;
     notifyListeners();
   }
 }

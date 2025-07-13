@@ -10,4 +10,5 @@ class AppColors {
   static const mainBlueColor = Color(0xFF3d5a80);
   static const activeButtonColor = Color(0xFF217FEB);
   static const inactiveButtonColor = Color(0xFF737373);
+  static const viewOnlyTextField = Color(0xFFE2ECF7);
 }

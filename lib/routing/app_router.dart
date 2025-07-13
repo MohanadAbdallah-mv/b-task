@@ -22,6 +22,7 @@ class AppRouter {
       }
     }
 
+    final args = settings.arguments;
     switch (settings.name) {
       case Routes.splashScreen:
         return buildPlatformPageRoute(
@@ -40,8 +41,12 @@ class AppRouter {
         return buildPlatformPageRoute(
             (context) => const BackCameraScreen(), settings);
       case Routes.photoPreviewScreen:
+        final Map<String, dynamic> photoArgs = args as Map<String, dynamic>;
         return buildPlatformPageRoute(
-            (context) => const PhotoPreviewScreen(), settings);
+            (context) => PhotoPreviewScreen(
+                  options: photoArgs,
+                ),
+            settings);
 
       case Routes.confirmScreen:
         return buildPlatformPageRoute(

@@ -23,11 +23,9 @@ class PlatformNavigator {
   }
 
   static Future<T?> pushNamed<T extends Object?>(
-      BuildContext context, String screenName) {
-    return Navigator.pushNamed(
-      context,
-      screenName,
-    );
+      BuildContext context, String screenName,
+      {Map<String, dynamic>? options}) {
+    return Navigator.pushNamed(context, screenName, arguments: options);
   }
 
   static void pop<T extends Object?>(BuildContext context, [T? result]) {

@@ -7,6 +7,7 @@ import 'package:blnk_task/util/routes.dart';
 import 'package:blnk_task/views/components/custom_button.dart';
 import 'package:blnk_task/views/components/main_appBar.dart';
 import 'package:blnk_task/views/pages/address_screen.dart';
+import 'package:bot_toast/bot_toast.dart';
 import 'package:easy_pdf_viewer/easy_pdf_viewer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_doc_scanner/flutter_doc_scanner.dart';
@@ -46,6 +47,7 @@ class _FrontCameraScreenState extends State<FrontCameraScreen> {
   @override
   void initState() {
     super.initState();
+
     String? path =
         Provider.of<UserProvider>(context, listen: false).frontIDPath;
     WidgetsBinding.instance.addPostFrameCallback((_) async {

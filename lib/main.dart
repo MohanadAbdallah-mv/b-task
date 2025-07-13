@@ -1,3 +1,4 @@
+import 'package:blnk_task/providers/google_provider.dart';
 import 'package:blnk_task/providers/governorate_provider.dart';
 import 'package:blnk_task/providers/user_provider.dart';
 import 'package:blnk_task/routing/app_router.dart';
@@ -16,7 +17,8 @@ void main() async {
   FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
   runApp(MultiProvider(providers: [
     ChangeNotifierProvider(create: (_) => GovernorateProvider()),
-    ChangeNotifierProvider(create: (_) => UserProvider())
+    ChangeNotifierProvider(create: (_) => UserProvider()),
+    ChangeNotifierProvider(create: (_) => GoogleProvider())
   ], child: const MyApp()));
 }
 
