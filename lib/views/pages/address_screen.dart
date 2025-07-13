@@ -1,10 +1,5 @@
-import 'dart:developer';
-
-import 'package:blnk_task/models/address/area.dart';
-import 'package:blnk_task/models/address/governorate.dart';
 import 'package:blnk_task/providers/governorate_provider.dart';
 import 'package:blnk_task/providers/user_provider.dart';
-import 'package:blnk_task/util/app_colors.dart';
 import 'package:blnk_task/util/app_theme.dart';
 import 'package:blnk_task/util/navigator_helper.dart';
 import 'package:blnk_task/util/routes.dart';
@@ -14,10 +9,8 @@ import 'package:blnk_task/views/components/custom_button.dart';
 import 'package:blnk_task/views/components/custom_textfield.dart';
 import 'package:blnk_task/views/components/main_appBar.dart';
 import 'package:blnk_task/views/components/progress_stepper.dart';
-import 'package:blnk_task/views/pages/camera/camera_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
 import '../components/address/city_dropdown.dart';
 
 class AddressScreen extends StatefulWidget {
@@ -235,7 +228,6 @@ class _AddressScreenState extends State<AddressScreen> {
                       isActive = false;
                     });
                   }
-                  log(governorateProvider.selectedArea!.toJson().toString());
                   FocusScope.of(context).requestFocus(FocusNode());
                 },
               ),
