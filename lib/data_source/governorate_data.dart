@@ -1,6 +1,4 @@
 import 'dart:convert';
-import 'dart:developer';
-
 import 'package:blnk_task/models/address/area.dart';
 import 'package:blnk_task/models/address/governorate.dart';
 import 'package:http/http.dart' as http;
@@ -17,6 +15,7 @@ class RemoteAppDataSource implements IAppDataSource {
 
   static RemoteAppDataSource get instance => _instance;
 
+  /// could be assigned in app_constants but won't make it accessible from outside the data source
   final String _governoratesUrl =
       'https://raw.githubusercontent.com/Tech-Labs/egypt-governorates-and-cities-db/master/governorates.json';
 

@@ -1,9 +1,8 @@
 import 'package:shared_preferences/shared_preferences.dart';
 
 class AppCache {
-  static const userKey = "user";
-  static const tokenKey = "token";
-  static String languageKey = "language";
+  static const String governoratesKey = 'cached_governorates_list';
+  static const String areasKey = 'cached_areas_list';
 
   static final AppCache _instance = AppCache();
 
