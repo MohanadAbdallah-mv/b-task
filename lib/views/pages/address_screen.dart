@@ -102,12 +102,12 @@ class _AddressScreenState extends State<AddressScreen> {
                 governorateProvider.selectedGovernorate!.nameEn,
                 _landMarkController.text,
               );
+              PlatformNavigator.pushNamed(context, Routes.cameraScreen);
+            } else {
+              setState(() {
+                isActive = false;
+              });
             }
-            //todo change this to navigate to // add the missing routes to router and use pushnamed
-            PlatformNavigator.push(context, const CameraScreen());
-            PlatformNavigator.pushNamed(context, Routes.registerScreen);
-
-            // PlatformNavigator.pushNamed(context, Routes.registerScreen);
           },
           child: Text(
             "Next",
