@@ -1,3 +1,4 @@
+import 'package:blnk_task/providers/governorate_provider.dart';
 import 'package:blnk_task/providers/user_provider.dart';
 import 'package:blnk_task/util/app_theme.dart';
 import 'package:blnk_task/util/navigator_helper.dart';
@@ -7,6 +8,7 @@ import 'package:blnk_task/views/components/custom_button.dart';
 import 'package:blnk_task/views/components/custom_textfield.dart';
 import 'package:blnk_task/views/components/main_appBar.dart';
 import 'package:blnk_task/views/components/progress_stepper.dart';
+import 'package:bot_toast/bot_toast.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -75,7 +77,7 @@ class _PersonalInfoScreenState extends State<PersonalInfoScreen> {
             "Next",
             style: AppTheme.activeProgress,
           ),
-          onTap: () {
+          onTap: () async {
             bool? valid = formKey.currentState?.validate();
 
             if (valid != null && valid == true) {
@@ -86,6 +88,10 @@ class _PersonalInfoScreenState extends State<PersonalInfoScreen> {
                 _landLineController.text,
                 _emailController.text,
               );
+              BotToast.showLoading();
+              await Provider.of<GovernorateProvider>(context, listen: false)
+                  .loadLocations();
+              BotToast.closeAllLoading();
               PlatformNavigator.pushNamed(context, Routes.addressScreen);
             } else {
               setState(() {

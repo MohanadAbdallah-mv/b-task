@@ -1,5 +1,6 @@
 import 'package:blnk_task/util/routes.dart';
 import 'package:blnk_task/views/pages/address_screen.dart';
+import 'package:blnk_task/views/pages/camera/camera_screen.dart';
 import 'package:blnk_task/views/pages/confirm_screen.dart';
 import 'package:blnk_task/views/pages/personal_info.dart';
 import 'package:blnk_task/views/pages/register_screen.dart';
@@ -30,6 +31,9 @@ class AppRouter {
       case Routes.addressScreen:
         return buildPlatformPageRoute(
             (context) => const AddressScreen(), settings);
+      case Routes.cameraScreen:
+        return buildPlatformPageRoute(
+            (context) => const CameraScreen(), settings);
       case Routes.confirmScreen:
         return buildPlatformPageRoute(
             (context) => const ConfirmScreen(), settings);

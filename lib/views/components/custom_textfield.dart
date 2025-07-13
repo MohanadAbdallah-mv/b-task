@@ -10,18 +10,20 @@ class CustomTextField extends StatefulWidget {
   final TextInputType keyboardType;
   final bool obscureText;
   final ValueChanged<String>? onChanged;
+  final VoidCallback? onDone;
   final FormFieldValidator<String>? validator;
-
-  const CustomTextField({
-    super.key,
-    this.controller,
-    required this.labelText,
-    this.hintText,
-    this.keyboardType = TextInputType.text,
-    this.obscureText = false,
-    this.onChanged,
-    this.validator,
-  });
+  final FocusNode? focusNode;
+  const CustomTextField(
+      {super.key,
+      this.controller,
+      required this.labelText,
+      this.hintText,
+      this.onDone,
+      this.keyboardType = TextInputType.text,
+      this.obscureText = false,
+      this.onChanged,
+      this.validator,
+      this.focusNode});
 
   @override
   State<CustomTextField> createState() => _CustomTextFieldState();
@@ -36,8 +38,9 @@ class _CustomTextFieldState extends State<CustomTextField> {
       obscureText: widget.obscureText,
       onChanged: widget.onChanged,
       validator: widget.validator,
+      focusNode: widget.focusNode,
       style: AppTheme.activeProgress
-          .copyWith(color: Colors.green), // Style for the actual input text
+          .copyWith(color: Colors.black54), // Style for the actual input text
       decoration: InputDecoration(
         labelText: widget.labelText, // The "title" of the input field
         labelStyle: AppTheme.textFieldTitle, // Style for the label text
@@ -94,6 +97,12 @@ class _CustomTextFieldState extends State<CustomTextField> {
         contentPadding:
             const EdgeInsets.symmetric(vertical: 16.0, horizontal: 12.0),
       ),
+      onTapOutside: (event) {
+        FocusScope.of(context).requestFocus(
+          FocusNode(),
+        );
+      },
+      onEditingComplete: widget.onDone,
     );
   }
 }

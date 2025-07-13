@@ -20,6 +20,10 @@ class User {
   Address? address;
   String? frontIDURL;
   String? backIDURL;
+  set setAddress(Address newAddress) {
+    address = newAddress;
+  }
+
   factory User.fromJson(Map<String, dynamic> json) {
     return User(
       firstName: json["firstName"] as String,

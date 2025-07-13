@@ -77,7 +77,8 @@ class GovernorateProvider extends ChangeNotifier {
   /// Sets the selected governorate and notifies listeners.
   void setSelectedGovernorate(Governorate? governorate) {
     _selectedGovernorate = governorate;
-    _selectedArea = null; // Reset selected area when governorate changes
+    _selectedArea =
+        filteredAreas[0]; // Reset selected area when governorate changes
     notifyListeners(); // Rebuild UI to show filtered areas
   }
 

@@ -1,3 +1,6 @@
+import 'dart:developer';
+
+import 'package:blnk_task/models/address/address.dart';
 import 'package:blnk_task/models/user.dart';
 import 'package:flutter/cupertino.dart';
 
@@ -12,6 +15,21 @@ class UserProvider extends ChangeNotifier {
         mobileNumber: mobileNumber,
         landLine: landLine,
         email: email);
+    log(currentUser!.toJson().toString());
+    notifyListeners();
+  }
+
+  void setAddress(String apartment, String floor, String building,
+      String streetName, String areaName, String cityName, String landMark) {
+    currentUser!.setAddress = Address(
+        apartment: apartment,
+        floor: floor,
+        building: building,
+        streetName: streetName,
+        areaName: areaName,
+        cityName: cityName,
+        landMark: landMark);
+    log(currentUser!.toJson().toString());
     notifyListeners();
   }
 }
