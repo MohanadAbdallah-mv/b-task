@@ -59,6 +59,9 @@ class GovernorateProvider extends ChangeNotifier {
           !filteredAreas.contains(_selectedArea)) {
         _selectedArea = null;
       }
+      if (filteredAreas.isNotEmpty) {
+        _selectedArea = filteredAreas[0];
+      }
 
       _error = null;
     } catch (e) {

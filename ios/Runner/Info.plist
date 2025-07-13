@@ -47,5 +47,13 @@
 		<true/>
 		<key>UIStatusBarHidden</key>
 		<false/>
+		<key>NSCameraUsageDescription</key>
+        <string>Need to use camera for ID scanning</string>
+
+        <key>NSMicrophoneUsageDescription</key>
+        <string>To enable microphone access when recording video</string>
+
+        <key>NSLocationWhenInUseUsageDescription</key>
+        <string>To enable GPS location access for Exif data</string>
 	</dict>
 </plist>

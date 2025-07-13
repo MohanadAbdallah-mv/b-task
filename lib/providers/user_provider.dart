@@ -2,10 +2,14 @@ import 'dart:developer';
 
 import 'package:blnk_task/models/address/address.dart';
 import 'package:blnk_task/models/user.dart';
+import 'package:easy_pdf_viewer/easy_pdf_viewer.dart';
 import 'package:flutter/cupertino.dart';
 
 class UserProvider extends ChangeNotifier {
   User? currentUser;
+  String? frontIDPath;
+  String? backIDPath;
+  PDFDocument? frontIDDoc;
 
   void setUser(String firstName, String lastName, String mobileNumber,
       String landLine, String email) {
@@ -30,6 +34,16 @@ class UserProvider extends ChangeNotifier {
         cityName: cityName,
         landMark: landMark);
     log(currentUser!.toJson().toString());
+    notifyListeners();
+  }
+
+  void setFrontIDPath(String path) {
+    frontIDPath = path;
+    notifyListeners();
+  }
+
+  void setBackIDPath(String path) {
+    backIDPath = path;
     notifyListeners();
   }
 }

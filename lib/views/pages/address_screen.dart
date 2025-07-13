@@ -95,7 +95,7 @@ class _AddressScreenState extends State<AddressScreen> {
                 governorateProvider.selectedGovernorate!.nameEn,
                 _landMarkController.text,
               );
-              PlatformNavigator.pushNamed(context, Routes.cameraScreen);
+              PlatformNavigator.pushNamed(context, Routes.frontCameraScreen);
             } else {
               setState(() {
                 isActive = false;
