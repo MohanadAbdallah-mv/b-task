@@ -54,7 +54,8 @@ class AreaDropdownWidget extends StatelessWidget {
                     area.nameEn,
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
-                    style: AppTheme.textFieldTitle,
+                    style: AppTheme.normalText
+                        .copyWith(color: AppColors.appBarTitleColor),
                   ),
                 ),
               );

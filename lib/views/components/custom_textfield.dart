@@ -39,8 +39,8 @@ class _CustomTextFieldState extends State<CustomTextField> {
       onChanged: widget.onChanged,
       validator: widget.validator,
       focusNode: widget.focusNode,
-      style: AppTheme.activeProgress
-          .copyWith(color: Colors.black54), // Style for the actual input text
+      style: AppTheme.activeProgress.copyWith(
+          color: AppColors.appBarTitleColor), // Style for the actual input text
       decoration: InputDecoration(
         labelText: widget.labelText, // The "title" of the input field
         labelStyle: AppTheme.textFieldTitle, // Style for the label text
