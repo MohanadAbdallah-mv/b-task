@@ -1,12 +1,18 @@
+import 'package:blnk_task/providers/governorate_provider.dart';
+import 'package:blnk_task/providers/user_provider.dart';
 import 'package:blnk_task/routing/app_router.dart';
 import 'package:blnk_task/util/routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
+import 'package:provider/provider.dart';
 
 void main() {
   WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
   FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
-  runApp(const MyApp());
+  runApp(MultiProvider(providers: [
+    ChangeNotifierProvider(create: (_) => GovernorateProvider()),
+    ChangeNotifierProvider(create: (_) => UserProvider())
+  ], child: const MyApp()));
 }
 
 class MyApp extends StatefulWidget {
