@@ -55,5 +55,7 @@
 
         <key>NSLocationWhenInUseUsageDescription</key>
         <string>To enable GPS location access for Exif data</string>
+        <key>NSCameraUsageDescription</key>
+         <string>Camera Permission Description</string>
 	</dict>
 </plist>
