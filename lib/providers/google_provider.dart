@@ -15,15 +15,15 @@ class GoogleProvider extends ChangeNotifier {
 {
   "type": "service_account",
   "project_id": "b-task-465817",
-  "private_key_id": "a9c8f039b9f2693040a0952aa39a0b148a6a031f",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCnP1MMy1ID6X8Z\nB0ZfOAqllqIihIIUOAo3D/5Crr6Ao7dwz6Gu5nadPYHyIoej+SEy5/KXGWT+htW4\nLG+ARWoPACNd3IihiN7a/1hpU1xkq2EcEzuxe64b5UPXAIJ7JAG7XtYlGAKHVb/s\np/OEybb7wwOa+Kmamin4W3LzJIW8K+Rt7lO0lF2MHw7+XUHJe66PELKz3kBdLNcb\nfI7uYb5SnPiO/lf5yqqjvlMNHaSjBgskBNInxPUDyKxyNM1lNbiNnTWIDNGaTJbu\nihC25HXelXDLIXy3pJIinkwIOkiY0LoJj1dPxvaBV7hPdBY+Wtte9bl1MC/KXRMS\nnrixoYR5AgMBAAECggEAH9JTJXSMEtV7CtKRB638jJwYFlQ7AcjV3LssyBhCg+xi\ni1LeMw6DlBBvaJg8Ua0lrW9nf2tkBW+3O1ctEe1jLB59HC9JSd7mdCmwcz3arwbS\nr8pTCcZ8Dq+1FDPzH6XutG1rdlxWotRkc41TLrlImSd2SKa2coWRpcEUooGY9n/e\ntV01rGmFWB1MT3Tsyg7xAj+6WfrM4hmlEPZiiqjLwfCupz9e7MuwjSaq+pRX0MY/\n9SHX2sIxTRXAvLqEgb+vomTUU50gDnko7NSsR3flbTUHtpkT6pf761J/2KxADpzt\n1vlNffvnh3CMRTw2QZtLnkVbPBkL7BTxIP6kOPj2fwKBgQDP7LYAdVB4dGX7vD7g\nAvtFX2DeOjzCADgpCmoBPnYKVDylaAoirAKfHV5MVSQOsO5h1dIdCYW5SUrGhuT6\nBzNpyUgMa0Jw9J04w5t3ldG9w4B/imHG3e3/fx9/fuXLssDTXMhAKpIcT2MRAJNq\nQe7BAaYI7zeIBLn0wz8P8rNIXwKBgQDN6uE8WoPSAdW/PnBfw4e/v1yhNQwETbDq\nvb3oZgQFz75PRf60sIyiUluMSumYTeGR7zL8I9Hoyp34Q2F0x5TAUTX9y43PbPIX\nvUn+8f535/PW2T2MnLsHDvt26YLz+d0ZrxWbw4wDN6v2Ylxtaf2F9htmNzEKdSGW\n93qR1PdCJwKBgCnpEr6A5xmAjNXzGdFZiIBxOztQDdMk7C0Jllht2Kk4VYkZsYFP\nnq+n4cwNFVmIvGQoD1QfCT9R0Kq3ogvry6c1FTq7nAbcp5w7gWjXYBGaCJqssAy/\nyytG2nh+gZ9PhqKT/yE/83eVYOiabxxp8dAhnvAKF+1o1nrJqDp0t0KNAoGBAJWK\nX+wep+CZaIssYxuIukrsQ+7mwUVWzoaLKSFfBMjbp4+We3TpShiPyuBFfwMWfBwp\nJFOsB8MRcktbU6klT8eisp0PeHsM2XuYAebeAzk8//4lYed94u0rWj9vMaTQ7lq6\npeyqxEGJ6p5RrGHhOTZSFm/S4RCBI9WpACBsEuy9AoGBAIR3sGso7Mi6YZpEFjwd\nOYvj8cUF4BzgfoNO5YEMYbdElrDqZsVuA2ztzjfqtgvhB+QmZsfND+/cV7b7p8sN\niJXxLd1fDcRtLDGwbaSwea8wWvp6IlXK1XqQyDB09umu2CU1EympB3CzdyUNyDXm\nYvgcGedSSrhhnrYT2LcjW96B\n-----END PRIVATE KEY-----\n",
-  "client_email": "b-task-acc@b-task-465817.iam.gserviceaccount.com",
-  "client_id": "103874348023635511782",
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/b-task-acc%40b-task-465817.iam.gserviceaccount.com",
-  "universe_domain": "googleapis.com"
+  "private_key_id": "",
+  "private_key": "",
+  "client_email": "",
+  "client_id": "",
+  "auth_uri": "",
+  "token_uri": "",
+  "auth_provider_x509_cert_url": "",
+  "client_x509_cert_url": "",
+  "universe_domain": ""
 }
 '''; // service account json string should look like this
 
