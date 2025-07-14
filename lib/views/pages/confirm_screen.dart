@@ -73,7 +73,7 @@ class _ConfirmScreenState extends State<ConfirmScreen> {
                   labelText: '',
                   maxLines: 1,
                   initialValue: "${user.firstName} ${user.lastName}",
-                  enabled: true,
+                  enabled: false,
                   confirmUI: true,
                   onDone: () {},
                 ),
@@ -106,7 +106,7 @@ class _ConfirmScreenState extends State<ConfirmScreen> {
                   labelText: '',
                   maxLines: 1,
                   initialValue: user.mobileNumber,
-                  enabled: true,
+                  enabled: false,
                   confirmUI: true,
                   onDone: () {},
                 ),
@@ -117,7 +117,7 @@ class _ConfirmScreenState extends State<ConfirmScreen> {
                   labelText: '',
                   maxLines: 1,
                   initialValue: user.landLine,
-                  enabled: true,
+                  enabled: false,
                   confirmUI: true,
                   onDone: () {},
                 )
@@ -150,7 +150,7 @@ class _ConfirmScreenState extends State<ConfirmScreen> {
                   labelText: '',
                   maxLines: 1,
                   initialValue: user.email,
-                  enabled: true,
+                  enabled: false,
                   confirmUI: true,
                   onDone: () {},
                 ),
@@ -183,7 +183,7 @@ class _ConfirmScreenState extends State<ConfirmScreen> {
                   labelText: '',
                   maxLines: 2,
                   initialValue: user.address?.fullAddressString,
-                  enabled: true,
+                  enabled: false,
                   confirmUI: true,
                   onDone: () {},
                 ),
@@ -274,7 +274,7 @@ class _ConfirmScreenState extends State<ConfirmScreen> {
             padding: const EdgeInsets.only(bottom: 50, left: 65, right: 65),
             child: CustomButton(
               onTap: () async {
-                //todo uncomment this later
+                //todo uncomment this after adding the google service credentials
                 // await Provider.of<GoogleProvider>(context, listen: false)
                 //     .submitDataToGoogle(user);
                 PlatformNavigator.pushNamed(context, Routes.registerScreen);

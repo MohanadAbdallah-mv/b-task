@@ -25,7 +25,7 @@ class _BackCameraScreenState extends State<BackCameraScreen> {
   Future<File?> scanDocument() async {
     try {
       dynamic scannedDocuments =
-          await FlutterDocScanner().getScannedDocumentAsPdf();
+          await FlutterDocScanner().getScannedDocumentAsPdf(page: 1);
       if (scannedDocuments == null) return null;
       final uriData = scannedDocuments["pdfUri"];
       final path = Uri.parse(uriData).toFilePath();

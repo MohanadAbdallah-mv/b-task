@@ -1,3 +1,4 @@
+import 'package:blnk_task/firebase_options.dart';
 import 'package:blnk_task/providers/google_provider.dart';
 import 'package:blnk_task/providers/governorate_provider.dart';
 import 'package:blnk_task/providers/user_provider.dart';
@@ -5,6 +6,7 @@ import 'package:blnk_task/routing/app_router.dart';
 import 'package:blnk_task/util/app_cache.dart';
 import 'package:blnk_task/util/routes.dart';
 import 'package:bot_toast/bot_toast.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:provider/provider.dart';
@@ -15,6 +17,9 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await AppCache.instance.init();
   FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(MultiProvider(providers: [
     ChangeNotifierProvider(create: (_) => GovernorateProvider()),
     ChangeNotifierProvider(create: (_) => UserProvider()),

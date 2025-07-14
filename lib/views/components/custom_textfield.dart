@@ -31,7 +31,7 @@ class CustomTextField extends StatefulWidget {
       this.keyboardType = TextInputType.text,
       this.obscureText = false,
       this.enabled = true,
-      this.maxLines,
+      this.maxLines = 1,
       this.onChanged,
       this.initialValue,
       this.confirmUI = false,
